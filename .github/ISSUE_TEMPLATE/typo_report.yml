@@ -1,0 +1,76 @@
+name: Typographical error report
+description: Report a bug which occurs in a web application
+title: "Typo: "
+labels: ["Typo Report", "Typo Satus: Review Required"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a typo for Sci-Hook systems. People like you help us a lot to keep Sci-Hook systems optimized and usable.
+
+        There are many ways to volunteer for Sci-Hook. One of them is to report typos. If you want to volunteer for Sci-Hook, you can visit the [Sci-Hook Volunteering Center](https://volunteering.scihook.org).
+  - type: input
+    id: contact-info
+    attributes:
+      label: Contact E-Mail Address
+      description: If you want us to get back to you about your report, you can write your e-mail address. (Your e-mail address will be visible to the GitHub.)
+      placeholder: For example, contact@example.com
+    validation:
+      required: false
+  - type: dropdown
+    id: location
+    attributes:
+      label: Location of Typo
+      description: Select which Sci-Hook system the typo is on.
+      multiple: false
+      options:
+        - Sci-Hook Website (scihook.org)
+        - Sci-Hook Help Articles
+        - Sci-Hook Legal Texts
+        - Other Location
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to Typo Location
+      description: Include the link to the location of the typo.
+      placeholder: For example, https://about.scihook.org
+    validations:
+      required: true
+  - type: dropdown
+    id: typo-priority
+    attributes:
+      label: Priority of Typo
+      description: Indicate how high priority the typo is. This helps our order of priority.
+      multiple: false
+      options:
+        - The typo that creates a meaning change. (High Priority)
+        - It is not clear what the word/sentence is. (Medium Priority)
+        - A few character errors. There is no semantic shift or distortion. (Low Priority)
+    validations:
+      required: true
+  - type: textarea
+    id: describe
+    attributes:
+      label: Explain Typo
+      description: Simply explain what the typo is, where it is, and what the correct spelling is.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+    label: Add Screenshot
+    description: Optionally you can add helpful screenshots showing the typo. It helps us fix this typo. (recommended)
+  validations:
+    required: false
+  - type: checkboxes
+    id: legal
+    attributes:
+      label: Legal Information
+      description: There are certain terms that you agree to when reporting a typo for Sci-Hook Organization systems.
+      options:
+        - label: I declare that I accept the [Sci-Hook Privacy Policy](https://policies.scihook.org/privacy).
+          required: true
+        - label: I declare that the report I sent is for a typo and there is no security vulnerability report.
+          required: true
