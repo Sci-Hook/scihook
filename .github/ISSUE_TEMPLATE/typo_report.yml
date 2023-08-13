@@ -5,7 +5,7 @@ labels: ["Typo Report", "Typo Satus: Review Required"]
 body:
   - type: markdown
     attributes:
-      value: 
+      value: |
         Thank you for reporting a typo for Sci-Hook systems. People like you help us a lot to keep Sci-Hook systems optimized and usable.
 
         There are many ways to volunteer for Sci-Hook. One of them is to report typos. If you want to volunteer for Sci-Hook, you can visit the [Sci-Hook Volunteering Center](https://volunteering.scihook.org).
